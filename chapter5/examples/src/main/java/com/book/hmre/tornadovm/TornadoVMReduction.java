@@ -16,13 +16,13 @@ import java.util.stream.IntStream;
 /**
  * How to run from the command line:
  * <code>
- *     tornado -cp target/examples-1.0-SNAPSHOT.jar com.book.hmrs.tornadovm.TornadoVMReduction
+ *     tornado -cp target/examples-1.0-SNAPSHOT.jar com.book.hmre.tornadovm.TornadoVMReduction
  * </code>
  *
  * <p>
  *     With profiling information enabled:
  *     <code>
- *         tornado --jvm="-Dcompute.reduce.device=0:0" --printKernel --threadInfo -cp target/examples-1.0-SNAPSHOT.jar com.book.hmrs.tornadovm.TornadoVMReduction
+ *         tornado --jvm="-Dcompute.reduce.device=0:0" --printKernel --threadInfo -cp target/examples-1.0-SNAPSHOT.jar com.book.hmre.tornadovm.TornadoVMReduction
  *     </code>
  * </p>
  */

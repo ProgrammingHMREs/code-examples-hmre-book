@@ -15,14 +15,14 @@ import java.util.stream.IntStream;
  *
  * <p>
  * <code>
- *     tornado -cp target/examples-1.0-SNAPSHOT.jar com.book.hmrs.tornadovm.TornadoVMSquare
+ *     tornado -cp target/examples-1.0-SNAPSHOT.jar com.book.hmre.tornadovm.TornadoVMSquare
  * </code>
  * </p>
  *
  * <p>
  * Enable profiling information:
  * <code>
- *     tornado --jvm="-Dcompute.square.device=0:0" --printKernel --threadInfo -cp target/examples-1.0-SNAPSHOT.jar com.book.hmrs.tornadovm.TornadoVMSquare
+ *     tornado --jvm="-Dcompute.square.device=0:0" --printKernel --threadInfo -cp target/examples-1.0-SNAPSHOT.jar com.book.hmre.tornadovm.TornadoVMSquare
  * </code>
  * </p>
  *

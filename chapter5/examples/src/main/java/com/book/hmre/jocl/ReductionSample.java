@@ -13,8 +13,6 @@ import org.jocl.cl_mem;
 import org.jocl.cl_platform_id;
 import org.jocl.cl_program;
 
-import java.util.Arrays;
-import java.util.LongSummaryStatistics;
 import java.util.Random;
 import java.util.stream.IntStream;
 

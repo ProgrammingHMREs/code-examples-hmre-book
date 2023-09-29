@@ -15,13 +15,13 @@ import java.util.Random;
 /**
  * How to run from the command line:
  * <code>
- *     tornado -cp target/examples-1.0-SNAPSHOT.jar com.book.hmrs.tornadovm.TornadoVMMxM
+ *     tornado -cp target/examples-1.0-SNAPSHOT.jar com.book.hmre.tornadovm.TornadoVMMxM
  * </code>
  *
  * <p>
  *     With profiling information enabled:
  *     <code>
- *         tornado --jvm="-Dcompute.mxm.device=0:0" --printKernel --threadInfo -cp target/examples-1.0-SNAPSHOT.jar com.book.hmrs.tornadovm.TornadoVMMxM
+ *         tornado --jvm="-Dcompute.mxm.device=0:0" --printKernel --threadInfo -cp target/examples-1.0-SNAPSHOT.jar com.book.hmre.tornadovm.TornadoVMMxM
  *     </code>
  * </p>
  */
