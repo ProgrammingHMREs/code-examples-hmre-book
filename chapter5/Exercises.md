@@ -22,20 +22,21 @@
 6. Optimize the JOCL code for the matrix multiplication explained in Section 5.2.3 to perform loop interchange [87] and compare the performance for different matrix sizes with the equivalent application in TornadoVM explained in Section 5.4.4. 
 
 7. Adapt the Java reduction code shown below that estimates the Pi number to run with TornadoVM.
+   a. Enable the profiler with the option −−enableProfiler console from the command line and analyze the kernel execution time and the data transfers time.
+	
+   b. How many kernels were generated for the TornadoVM implementation of the code snippet below? What is the purpose of each of the generated kernels?
 
 ```java
 	public static void computePi(float[] input, float[] result) {
-    	result[0] = 0.0f;
-    	for (int i = 1; i < input.length; i++) {
+	    result[0] = 0.0f;
+    	    for (int i = 1; i < input.length; i++) {
         	float value = input[i] + (TornadoMath.pow(-1, i + 1) / (2 * i - 1));
         	result[0] += value;
-    	}
+    	    }
 	}
 ```	
 
-	a. Enable the profiler with the option −−enableProfiler console from the command line and analyze the kernel execution time and the data transfers time.
-	
-	b. How many kernels were generated for the TornadoVM implementation of the code snippet in Listing 63? What is the purpose of each of the generated kernels?
+  
 	
 8. What are the advantages and disadvantages of each programming approach that we saw in this chapter, namely, wrapper libraries, usage of pre-built kernels and fully automatic solutions? Under which software, functional and performance requirements would you use each of them?
 
