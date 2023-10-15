@@ -3,7 +3,9 @@
 1. In relation to the wrappers programming approach to implement applications using managed runtime programming environments to access hardware accelerators, why non-blocking calls are not recommended?
 
 	a. If there are any issues, is there any way to work around those issues? 
+	
 	b. How do off-heap memory data types solve the issue?
+	
 	c. List examples of off-heap memory Java APIs.
 	
 2. Change the OpenCL C program for the Matrix Multiplication implemented in JOCL for launching and accessing a 1D kernels.
@@ -33,8 +35,9 @@
 
 ```
 
-a. Enable the profiler with the option −−enableProfiler console from the command line and analyze the kernel execution time and the data transfers time.
-b. How many kernels were generated for the TornadoVM implementation of the code snippet in Listing 63? What is the purpose of each of the generated kernels?
+	a. Enable the profiler with the option −−enableProfiler console from the command line and analyze the kernel execution time and the data transfers time.
+	
+	b. How many kernels were generated for the TornadoVM implementation of the code snippet in Listing 63? What is the purpose of each of the generated kernels?
 	
 8. What are the advantages and disadvantages of each programming approach that we saw in this chapter, namely, wrapper libraries, usage of pre-built kernels and fully automatic solutions? Under which software, functional and performance requirements would you use each of them?
 
