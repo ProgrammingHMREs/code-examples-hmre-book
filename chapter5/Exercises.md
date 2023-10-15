@@ -24,7 +24,6 @@
 7. Adapt the Java reduction code shown below that estimates the Pi number to run with TornadoVM.
 
 ```java
-
 	public static void computePi(float[] input, float[] result) {
     	result[0] = 0.0f;
     	for (int i = 1; i < input.length; i++) {
@@ -32,8 +31,7 @@
         	result[0] += value;
     	}
 	}
-
-```
+```	
 
 	a. Enable the profiler with the option −−enableProfiler console from the command line and analyze the kernel execution time and the data transfers time.
 	
